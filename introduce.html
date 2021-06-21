@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v11.0" nonce="BTV0S5pd"></script>
   <style>
   body {
     font: 400 15px Lato, sans-serif;
@@ -158,6 +160,9 @@
     -webkit-animation-duration: 1s;
     visibility: visible;
   }
+  .pic-expand{ overflow:hidden;}
+  .pic-expand img{transform:scale(1,1);transition: all 1s ease-out;}
+  .pic-expand img:hover{transform:scale(1.2,1.2);}
   @keyframes slide {
     0% {
       opacity: 0;
@@ -205,7 +210,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="#myPage">ShiaoC</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -231,7 +236,7 @@
     <div class="col-sm-1">
     </div>
     <div class="col-sm-3">
-      <img src="head.jpg" style="max-width: 360px;min-width: 200px;width: 100%" class="img-responsive img-circle slideanim" alt="ShiaoC">
+      <img src="head.jpg" style="max-width: 360px;min-width: 200px;width: 100%" class="img-responsive pic-expand img-circle slideanim" alt="ShiaoC">
     </div>
     <div class="col-sm-1">
     </div>
@@ -257,22 +262,20 @@
   <h2 class="text-center">My Experience</h2>
   
   <div class="row">
-    <div class="col-sm-1">
-    </div>
     <div class="col-sm-4">
-      <h3>Coding</h3><br>
+      <h3 >Coding</h3><br>
       <h4>APCS-高中程式先修測驗<br> 實作240/500分 觀念72/100分</h4>
       <h4>CPE-大學程式能力檢定<br> 2/7題</h4>
       <h4>YTP-少年圖靈計畫<br> 進入決賽</h4>
     </div>
     <div class="col-sm-4">
-      <h3>Cosplay</h3><br>
+      <h3 >Cosplay</h3><br>
       <h4>「台灣少女×歷史」Cosplay競賽<br>少女組第二名</h4>
       <h4>個人FB粉絲專頁<br>追蹤人數1000</h4>
 
     </div>
-    <div class="col-sm-3">
-      <h3>Other</h3><br>
+    <div class="col-sm-4">
+      <h3 >Other</h3><br>
       <h4>臺南市106年度客家好聲音比賽<br>青少年組亞軍</h4>
       <h4><br></h4>
 
@@ -285,7 +288,7 @@
   <div class="row">
     <h3 class="text-center">About Coding</h3><br>
     <div class="col-sm-4 text-left">
-      <button type="button"class=" slideanim btn btn-success btn-lg">C++</button>
+      <button type="button"class=" slideanim btn btn-danger btn-lg">C++</button>
       <p><strong>主要使用語言</strong><br></p>
       <p>可流利應用<strong>Map、Queue、Stack、Deque</strong>等函式庫做撰寫</p>
       <p>能夠做<strong>圖論、DFS、BFS、Greedy</strong>等部分基礎題目的解題</p><br>
@@ -312,10 +315,33 @@
       <p>能夠編寫程式碼<br> 並連接實體電路做運行</p>
       <p></p>
       <p></p><br>
-      <img src="arduino.jpg" style="max-width: 360px;min-width: 160px;width: 100%" class=" slideanim" alt="Responsive image">
+      <img src="arduino.jpg" style="max-width: 360px;min-width: 160px;width: 100%" class=" slideanim pic-expand" alt="Responsive image">
 
     </div>
     </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <h3 class="text-center">About Design</h3><br>
+    <div class="col-sm-6 text-center">
+      <button type="button"class=" slideanim btn btn-success btn-lg">3D model</button>
+      <p>主要使用MAYA製作</p>
+      <img src="3D.jpg" style="max-width: 360px;min-width: 160px;width: 100%" class=" slideanim pic-expand " alt="Responsive image" >
+      <img src="3D2.jpg" style="max-width: 360px;min-width: 160px;width: 100%" class=" slideanim pic-expand" alt="Responsive image" >
+
+    </div>
+
+    <div class="col-sm-6 text-center">
+      <button type="button" class=" slideanim btn btn-success btn-lg">Photoshop</button>
+      <p>特效合成<br></p>
+      <img src="PS.png" style="max-width: 360px;min-width: 160px;width: 45%" class=" slideanim pic-expand" alt="Responsive image">
+      <img src="PS2.png" style="max-width: 360px;min-width: 160px;width: 45%" class=" slideanim pic-expand" alt="Responsive image">
+      
+    </div>
+    
+  
   </div>
 </div>
 
@@ -358,15 +384,15 @@
     <div class="col-sm-3 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>Eating</h1>
+          <h1>K-pop</h1>
         </div>
         <div class="panel-body">
-          <img src="eating.jpg" style="width: 100%"  alt="Responsive image"
-          onmouseover="this.src='eating2.jpg';"
-          onmouseout="this.src='eating.jpg'">
+          <img src="kpop.jpg" style="width: 100%"  alt="Responsive image"
+          onmouseover="this.src='kpop2.jpg';"
+          onmouseout="this.src='kpop.jpg'">
         </div>
         <div class="panel-footer">
-          <button href="#eating" class="btn btn-lg">details</button>
+          <button href="#kpop" class="btn btn-lg">details</button>
         </div>
       </div>      
     </div>   
@@ -434,9 +460,12 @@
     <div class="col-sm-5">
       <p>Email : yan095565@gmail.com</p>
       <p>Personal Facebook : <a href="https://www.facebook.com/profile.php?id=100028022137496">蕭張</a></p>
-      <p>facebook fanpage : <a href="https://www.facebook.com/WQ.ShiaoChang">果然是完全蕭張TW cosplayer</a></p>
+      <p>Facebook Fanpage : <a href="https://www.facebook.com/WQ.ShiaoChang">果然是完全蕭張TW cosplayer</a></p>
     </div>
     <div class="col-sm-7 slideanim">
+      <div class="fb-page" data-href="https://www.facebook.com/WQ.ShiaoChang"  data-width="400" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+        <blockquote cite="https://www.facebook.com/WQ.ShiaoChang" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WQ.ShiaoChang">果然是完全囂張 TW cosplayer</a></blockquote>
+      </div>
       
     </div>
   </div>
