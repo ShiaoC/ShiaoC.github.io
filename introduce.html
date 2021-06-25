@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <!-- Theme Made By www.w3schools.com -->
   <title>蕭張媛的網頁</title>
   <meta charset="utf-8">
@@ -201,7 +202,7 @@
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
+  
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -227,7 +228,7 @@
 <div class="jumbotron text-center">
   <h1>蕭張媛</h1> 
   <p>ShiaoC's self introduction.</p> 
-  
+  <audio controls autoplay src="Peaceful Sleep.mp3"></audio>
 </div>
 
 <!-- Container (About Section) -->
@@ -328,9 +329,9 @@
     <div class="col-sm-6 text-center">
       <button type="button"class=" slideanim btn btn-success btn-lg">3D model</button>
       <p>主要使用MAYA製作</p>
-      <img src="3D.jpg" style="max-width: 360px;min-width: 160px;width: 100%" class=" slideanim pic-expand " alt="Responsive image" >
-      <img src="3D2.jpg" style="max-width: 360px;min-width: 160px;width: 100%" class=" slideanim pic-expand" alt="Responsive image" >
-
+      <img src="head210624-unscreen.png" style="max-width: 500px;min-width: 200px;width: 100%" class=" slideanim pic-expand " alt="Responsive image" >
+      <img src="3D2.jpg" style="max-width: 500px;min-width: 200px;width: 100%" class=" slideanim pic-expand" alt="Responsive image" >
+      <img src="3DD.gif" style="max-width: 500px;min-width: 200px;width: 100%" class=" slideanim pic-expand" alt="Responsive image" >
     </div>
 
     <div class="col-sm-6 text-center">
@@ -340,7 +341,7 @@
       <img src="PS2.png" style="max-width: 360px;min-width: 160px;width: 45%" class=" slideanim pic-expand" alt="Responsive image">
       
     </div>
-    
+    <br>
   
   </div>
 </div>
@@ -348,7 +349,8 @@
 <div id="habit" class="container-fluid bg-grey">
   <div class="text-center">
     <h2>My Habit</h2>
-    <h4>Move your mouse above the picture.</h4>
+    <h4>Move your mouse above the picture.<br>
+    Click "detail" to know about more.</h4>
   </div>
   <div class="row slideanim">
     <div class="col-sm-3 col-xs-12">
@@ -377,10 +379,36 @@
           onmouseout="this.src='handmade.jpg'">
         </div>
         <div class="panel-footer">
-          <button href="#handmade" class="btn btn-lg">details</button>
+          <button href="#handmade" class="btn btn-lg" data-toggle="modal" data-target="#handmade">details</button>
         </div>
       </div>      
     </div>       
+    <div class="modal fade" id="handmade" tabindex="-1" role="dialog" aria-labelledby="handmadelabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="handmadelabel">About Handmade</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <p>最常做的是毛線編織</p>
+            <img src="mermaidgif.gif" style="width: 100%" alt="embroidery"><br>
+            <p>偶爾也會做一些刺繡娃娃</p>
+            <img src="刺繡1.jpg" style="width: 100%" alt="embroidery"><br>
+            <img src="刺繡2.jpg" style="width: 100%" alt="embroidery2"><br>
+            <img src="刺繡2-1.jpg" style="width: 100%" alt="embroidery2-1"><br>
+            <p>想省錢時會做做看cosplay道具</p>
+            <img src="道具1.jpg" style="width: 100%" alt="diycosplay"><br>
+            <img src="道具2.jpg" style="width: 100%" alt="diycosplay2"><br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>   
     <div class="col-sm-3 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
@@ -392,9 +420,35 @@
           onmouseout="this.src='kpop.jpg'">
         </div>
         <div class="panel-footer">
-          <button href="#kpop" class="btn btn-lg">details</button>
+          <button href="#kpop" class="btn btn-lg" data-toggle="modal" data-target="#kpop">details</button>
         </div>
       </div>      
+    </div>
+    <div class="modal fade" id="kpop" tabindex="-1" role="dialog" aria-labelledby="kpoplabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="kpoplabel">About K-pop</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>喜歡K-pop女團，但對男團不太感冒<br>
+              最喜歡的是BLACKPINK、TWICE、(G)-IDLE、aespa <br>
+              要說特定人物的話則是子瑜！！
+            </p>
+            <img src="blackpink.jpeg" style="width: 100%" alt="blackpink"><br>
+            <img src="twice.jpg" style="width: 100%" alt="twice"><br>
+            <img src="gidle.jpg" style="width: 100%" alt="gidle"><br>
+            <img src="aespa.jpg" style="width: 100%" alt="aespa"><br>
+            <img src="tzuyu.jpg" style="width: 100%" alt="tzuyu"><br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>   
     <div class="col-sm-3 col-xs-12">
       <div class="panel panel-default text-center">
@@ -407,10 +461,29 @@
           onmouseout="this.src='game.jpg'">
         </div>
         <div class="panel-footer">
-          <button href="#game" class="btn btn-lg">details</button>
+          <button href="#game" class="btn btn-lg" data-toggle="modal" data-target="#game">details</button>
         </div>
       </div>      
-    </div>   
+    </div>
+    <div class="modal fade" id="game" tabindex="-1" role="dialog" aria-labelledby="gamelabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="gamelabel">About Game</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <p>最喜歡的是尼爾自動人形!!<br>沒有之一!!</p>
+            <img src="http://cdn.cloudflare.steamstatic.com/steam/apps/524220/capsule_616x353.jpg?t=1601026299" alt="nier automata" style="width: 100%;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>      
   </div>
 </div>
 
@@ -449,6 +522,7 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+    <br>
   </div>
 </div>
 
@@ -471,6 +545,9 @@
   </div>
 </div>
 
+<a href="#myPage" title="Go To Top" style="position: fixed;bottom: 5%;right: 5%; border-radius: 100%;"  class="btn btn-info btn-lg">
+  <span class="glyphicon glyphicon-chevron-up"></span>
+</a>  <!--??????????????????????????????????????????????????????-->
 
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
@@ -488,7 +565,6 @@
   </div>
                               
 </footer>
-
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
