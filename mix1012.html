@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>240110 Midnight</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <ul>
+                <li><a href="#sec">Home</a></li>
+                <li><a href="#third">About</a></li>
+                <li><a href="#">None</a></li>
+                <li><a href="#">None</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars" alt="">
+            <img src="moon.png" id="moon" alt="">
+            <img src="mountain_behind.png" id="mountain_behind" alt="">
+            <h2 id="title">Moon Light</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="mountain_front.png" id="mountain_front" alt="">
+        </section>
+        <div class="sec" id="sec">
+            <h2>編寫方法</h2>
+            <p>先確認上半部分section內自己想要的位置和排序，然後設定最底下有漸變，才不會衝突。<br>
+                然後overflow: hidden;設定超過的都藏起才不會卡。<br>
+                如果有像月亮那樣在illustrator內是透明但出來有顏色的，就加上mix-blend-mode: screen;<br>
+                <br>
+                下面的東西要把滑鼠放上去才有互動效果。
+            </p>
+
+            
+        </div>
+        <div class="third" id="third">
+            <div class="container">
+                <div class="box one" style="--img:url(001.jpg);" 
+                data-text="測試用"></div>
+                <div class="box two" style="--img:url(003.png);" 
+                data-text="姜紅兒"></div>
+                <div class="box three" style="--img:url(004.png);" 
+                data-text="莫懷"></div>
+                <div class="box four" style="--img:url(005.png);" 
+                data-text="齊劍心"></div>
+                <div class="box five" style="--img:url(006.png);" 
+                data-text="舒悅"></div>
+    
+            </div>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountain_behind = document.getElementById('mountain_behind');
+            let title = document.getElementById('title');
+            let btn = document.getElementById('btn');
+            let mountain_front = document.getElementById('mountain_front');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountain_behind.style.top = value * 0.5 + 'px';
+                mountain_front.style.top = value * 0 + 'px';
+                title.style.marginRight = value * 4 + 'px';
+                title.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+            });
+        </script>
+    </body>
+</html>
