@@ -296,14 +296,12 @@
 							==============================
 							* Use class "gli-alter-1", "gli-alter-2" or "gli-alter-3" to change gallery list item style.
 							-->
-							<div class="isotope-items-wrap">
+							<div id="gallery" class="isotope-items-wrap">
 
 								<!-- Grid sizer (do not remove!!!) -->
 								<div class="grid-sizer"></div>
 
-								<div id="gallery" class="isotope-container">
 									<!-- Images will be dynamically added here -->
-								</div>
 
 
 
@@ -786,46 +784,46 @@
 		<script src="static/js/theme.js"></script>
 
 		<script>
-			fetch('album.json')
+			fetch('https://shiaoc.github.io/album.json')
 			.then(response => response.json())
 			.then(data => {
 				const gallery = document.getElementById('gallery');
-		
+
 				data.forEach(imageData => {
 					const isotopeItem = document.createElement('div');
 					isotopeItem.classList.add('isotope-item');
-					isotopeItem.classList.add("${imageData.tags.join(' ')}");
-					isotopeItem.classList.add('${imageData.height}');
-		
+					isotopeItem.classList.add(...imageData.tags.map(tag => tag.replace(/\s/g, '-')));
+					isotopeItem.classList.add(imageData.height);
+
 					const galleryListItem = document.createElement('a');
 					galleryListItem.classList.add('gallery-list-item');
 					galleryListItem.href = "gallery-single.html";
-		
+
 					const glItemImage = document.createElement('div');
 					glItemImage.classList.add('gl-item-image');
 					glItemImage.classList.add('bg-image');
 					glItemImage.style.backgroundImage = `url(${imageData.imageUrl})`;
 					glItemImage.style.backgroundPosition = '50% 50%';
-		
+
 					const glItemInfo = document.createElement('div');
 					glItemInfo.classList.add('gl-item-info');
-		
+
 					const glItemCaption = document.createElement('div');
 					glItemCaption.classList.add('gl-item-caption');
-		
+
 					const glItemTitle = document.createElement('h2');
 					glItemTitle.classList.add('gl-item-title');
 					glItemTitle.textContent = imageData.title;
-		
+
 					const glItemCategory = document.createElement('span');
 					glItemCategory.classList.add('gl-item-category');
 					glItemCategory.textContent = imageData.tagsShow.join(', ');
-		
+
 					const glItemCount = document.createElement('span');
 					glItemCount.classList.add('gl-item-count');
 					glItemCount.title = 'Pictures count';
 					glItemCount.innerHTML = `<i class="fas fa-camera"></i> ${imageData.count}`;
-		
+
 					glItemCaption.appendChild(glItemTitle);
 					glItemCaption.appendChild(glItemCategory);
 					glItemInfo.appendChild(glItemCaption);
@@ -834,8 +832,12 @@
 					galleryListItem.appendChild(glItemInfo);
 					isotopeItem.appendChild(galleryListItem);
 					gallery.appendChild(isotopeItem);
+
+					// 触发重新布局
+					document.body.offsetHeight;
 				});
 			});
+
 		</script>
 
 
