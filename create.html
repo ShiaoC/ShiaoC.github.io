@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery Generator</title>
+<style>
+    /* Add your custom styles here */
+</style>
+</head>
+<body>
+    <label for="path">Path:</label>
+    <input type="text" id="path" name="path" placeholder="Enter path (e.g., gallery/220403/)">
+    <br>
+    <label for="filename">Filename:</label>
+    <input type="text" id="filename" name="filename" placeholder="Enter filename (e.g., _MG_2226.jpg)">
+    <br>
+    <input type="radio" id="iso-height-1" name="isotope" value="iso-height-1">
+    <label for="iso-height-1">iso-height-1</label>
+    <input type="radio" id="iso-height-2" name="isotope" value="iso-height-2">
+    <label for="iso-height-2">iso-height-2</label>
+    <br>
+    <button onclick="generateHTML()">Generate HTML</button>
+    <br>
+    <pre id="output"></pre>
+
+    <script>
+        function generateHTML() {
+            var path = document.getElementById("path").value.trim();
+            var filename = document.getElementById("filename").value.trim();
+            var isotope = document.querySelector('input[name="isotope"]:checked');
+
+            if (path === "" || filename === "" || !isotope) {
+                alert("Please fill in all fields and select an isotope option.");
+                return;
+            }
+
+            var isotopeValue = isotope.value;
+
+            var htmlCode = `
+            <div class="isotope-item ${isotopeValue}">
+                <a href="${path}${filename}" class="gallery-single-item lg-trigger">
+                    <div class="gs-item-image bg-image" style="background-image: url(${path}${filename}); background-position: 50% 50%"></div>
+                    <div class="gs-item-cover">
+                        <div class="gs-item-info">
+                            <span class="s-icon"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            `;
+
+            document.getElementById("output").innerText = htmlCode;
+            
+            // 複製文字到剪貼板
+            outputElement.select();
+            document.execCommand('copy');
+            alert("HTML code copied to clipboard!");
+        }
+    </script>
+</body>
+</html>
