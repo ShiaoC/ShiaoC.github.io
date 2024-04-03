@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-y-scroll">
+<html lang="en">
 	<head>
 
 		<!-- Title -->
-		<title>相簿 - ShiaoC</title>
+		<title>Contact - ShiaoC</title>
 
 		<!-- Meta -->
 		<meta charset="utf-8">
@@ -134,10 +134,10 @@
 									<li><a href="gallery-list-grid-no-filter.html">Without Filter</a></li>
 								</ul>
 							</li>
-							<li class="has-children active">
+							<li class="has-children">
 								<a href="#" class="sub-menu-trigger">Gallery</a> 
 								<ul class="sub-menu">
-									<li><a href="">Default</a></li>
+									<li><a href="gallery-single.html">Default</a></li>
 									<li><a href="gallery-single-no-crop.html">No Crop</a></li>
 									<li><a href="gallery-single-top-info.html">Top Info</a></li>
 									<li><a href="gallery-single-page-header.html">Page Header</a></li>
@@ -161,10 +161,10 @@
 									<li><a href="blog-single-no-sidebar.html">Single No Sidebar</a></li>
 								</ul>
 							</li>
-							<li class="has-children">
+							<li class="has-children active">
 								<a href="#" class="sub-menu-trigger">Contact</a> 
 								<ul class="sub-menu">
-									<li><a href="contact.html">Contact</a></li>
+									<li><a href="">Contact</a></li>
 									<li><a href="contact-simple.html">Contact Simple</a></li>
 								</ul>
 							</li>
@@ -239,170 +239,155 @@
 		*********** Begin body content *********** 
 		************************************** -->
 		<div id="body-content">
-						
-			<!-- ===================================
-			///// Begin gallery single section /////
-			==================================== -->
-			<section id="gallery-single-section">
-				<div class="container-fluid no-padding">
-					<div class="isotope-wrap">
-						
-						<!-- Begin isotope
-						===================
-						* Use class "gutter-1", "gutter-2" or "gutter-3" to add more space between items.
-						* Use class "col-1", "col-2", "col-3", "col-4", "col-5" or "col-6" for columns.
-						-->
-						<div class="isotope col-5 gutter-2">
 
-							<!-- Begin isotope items wrap 
-							==============================
-							* Use classes "cover-boxed", "cover-dark", "cover-color", "cover-simple" to change gallery single item cover variations.
-							-->
-							<div id="gallery" class="isotope-items-wrap lightgallery cover-color">
+			<!-- ========================================
+			///// Begin split box section (contact) /////
+			based on: http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height
+			========================================= -->
+			<section id="contact-section" class="split-box">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="row-lg-height full-height-vh">
 
-								<!-- Grid sizer (do not remove!!!) -->
-								<div class="grid-sizer"></div>
+							<!-- Column -->
+							<div class="col-lg-6 col-lg-height col-lg-middle bg-image" style="background-image: url(static/image/misc-4.jpg); background-position: 50% 50%;">
 
+								<!-- Element cover -->
+								<div class="cover"></div>
 
-								<!-- ===================== 
-								/// Begin isotope item ///
-								========================== 
-								* Use class "iso-height-1" or "iso-height-2" to set the item height.
-								-->
-								<div class="isotope-item iso-height-1 itb-parent">
+								<!-- Begin split box content -->
+								<div class="split-box-content text-left no-padding-left no-padding-right">
 
-									<!-- Begin isotope item text box (must be the first item!)
-									===========================================================
-									* Note: class "itb-parent" in "isotope-item" is required!
-									-->
-									<div class="iso-text-box-holder">
-										<div class="iso-text-box-wrap">
-											<div class="iso-text-box-inner">
-												<div class="iso-text-box">
-													<h3 class="gs-item-title font-alter-1">相簿名稱</h3>
-													<span class="gs-item-category">Nature</span>
+									<!-- Begin contact info -->
+									<div class="contact-info-wrap">
+										<div class="contact-info">
+											<p><i class="far fa-envelope"></i> email: <a href="mailto:shiaochang@gmail.com" target="_blank">shiaochang@gmail.com</a></p>
+										</div>
 
-													<!-- Begin text box description
-													================================
-													* Do not use long text. Short text only!!!
-													-->
-													<p class="gs-item-description">
-														<a target="_blank" href="javascript:;">Mauris luctus libero</a> - This is a short description of the album. Dolor sit amet nate, consectetur adipiscing elit. Vivamus et magna accumsan turpis egestas malesuada. Donec imperdiet ut quam sed faucibus. Sed at placerat odio. Duis leo dui, porta in rutrum sit amet consequat.
-													</p>
-													<!-- End text box description -->
+										<!-- Begin social buttons -->
+										<div class="social-buttons margin-top-20">
+											<ul>
+												<li><a href="https://www.facebook.com/ShiaoC/" class="btn btn-social-min btn-dark-bordered btn-rounded-full" target="_blank" title="Follow me on facebook"><i class="fab fa-facebook-f"></i></a></li>
+												<li><a href="https://www.instagram.com/shiaoc.photography/" class="btn btn-social-min btn-dark-bordered btn-rounded-full" target="_blank" title="Follow me on twitter"><i class="fab fa-instagram"></i></a></li>
 
-												</div> <!-- /.iso-text-box -->
-											</div> <!-- /.iso-text-box-inner -->
-
-											<!-- Begin gallery meta -->
-											<ul class="gallery-meta">
-												<li>
-													<!-- Begin favorite button -->
-													<div class="favorite-btn">
-														<div class="fav-inner">
-															<div class="icon-heart">
-																<span class="icon-heart-empty"></span>
-																<span class="icon-heart-filled"></span>
-															</div>
-														</div>
-														<div class="fav-count">56</div>
-													</div>
-													<!-- End favorite button -->
-												</li>
-												<li>
-													<!-- Begin content share trigger  -->
-													<div class="content-share-trigger">
-														<a href="#0" class="content-share-icon" title="Share this album" data-toggle="modal" data-target="#modal-38874978">
-															<i class="fas fa-share-alt"></i>
-														</a>
-													</div>
-													<!-- End content share trigger -->
-
-													<!-- Begin modal (for content share) 
-													=====================================
-													* Use class "modal-center" to enable modal center position.
-													-->
-													<div id="modal-38874978" class="modal modal-center fade" tabindex="-1" role="dialog" aria-hidden="false">
-														<div class="modal-dialog">
-															<div class="modal-content">
-																<div class="modal-header">
-																	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-																	<h4 class="modal-title">Share This Album</h4>
-																</div>
-																<div class="modal-body">
-
-																	<!-- Begin modal share -->
-																	<div class="modal-share">
-																		<div class="modal-share-image" style="background-image: url(static/image/gallery-single-1.jpg);"></div>
-																		
-																		<!-- Begin social buttons -->
-																		<div class="social-buttons">
-																			<ul>
-																				<li><a href="#0" class="btn btn-social-min btn-facebook btn-rounded-full" title="Share on facebook"><i class="fab fa-facebook-f"></i></a></li>
-																				<li><a href="#0" class="btn btn-social-min btn-twitter btn-rounded-full" title="Share on twitter"><i class="fab fa-twitter"></i></a></li>
-																				<li><a href="#0" class="btn btn-social-min btn-google btn-rounded-full" title="Share on google+"><i class="fab fa-google-plus-g"></i></a></li>
-																				<li><a href="#0" class="btn btn-social-min btn-pinterest btn-rounded-full" title="Share on pinterest"><i class="fab fa-pinterest"></i></a></li>
-																				<li><a href="#0" class="btn btn-social-min btn-linkedin btn-rounded-full" title="Share on linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-																			</ul>
-																		</div>
-																		<!-- End social buttons -->
-																		
-																		<input class="grab-link" type="text" readonly="" value="https://your-site.com/your-album-link/" onclick="this.select()">
-																	</div>
-																	<!-- End modal share -->
-
-																</div>
-																<div class="modal-footer hide"> <!-- remove class "hide" if you want to use modal footer -->
-																	Copyright 2016 / All rights reserved
-																</div>
-															</div> <!-- /.modal-content -->
-														</div> <!-- /.modal-dialog -->
-													</div>
-													<!-- End modal -->
-												</li>
 											</ul>
-											<!-- End gallery meta -->
+										</div>
+										<!-- End social buttons -->
 
-											<a onclick="goBack()" class="gs-back-to-list"><i class="fas fa-long-arrow-alt-left"></i> Go Back</a>
-
-										</div> <!-- /.iso-text-box-wrap -->
 									</div>
-									<!-- End isotope item text box -->
+									<!-- End contact info -->
 
 								</div>
-								<!-- End isotope item -->
+								<!-- End split box content -->
 
-								<!-- ===================== 
-								/// Begin isotope item ///
-								========================== 
-								* If you use background image on isotope-item child element, then you need to use class "iso-height-1" or "iso-height-2" to set the item height. If you use simple image tag, then don't use height classes.
-								-->
-								
+							</div> <!-- /.col -->
 
+							<!-- Column -->
+							<div class="col-lg-6 col-lg-height col-lg-middle no-padding">
 
+								<!-- Begin split box content -->
+								<div class="split-box-content">
 
+									<!-- Begin contact form 
+									========================= -->
+									<form id="contact-form">
+										<div class="contact-form-inner text-left">
 
+											<div class="contact-form-info">
+												<h1 class="contact-form-title font-alter-1">Get In Touch</h1>
+												<p>施工中，目前此功能不可用</p>
+											</div>
 
+											<!-- Begin hidden required fields (https://github.com/agragregra/uniMail) -->
+											<input type="hidden" name="project_name" value="yourwebsiteaddress.com"> <!-- Change value to your site name -->
+											<input type="hidden" name="admin_email" value="your@email.com"> <!-- Change value to your valid email address (where a message will be sent) -->
+											<input type="hidden" name="form_subject" value="Message from yourwebsiteaddress.com"> <!-- Change value to your own message subject -->
+											<!-- End Hidden Required Fields -->
 
+											<div class="row">
+												<div class="col-lg-6">
+													<div class="form-group">
+														<input type="text" class="form-control" name="name" placeholder="Your Name" required="">
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="form-group">
+														<input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="form-group">
+														<input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+													</div>
+												</div>
+											</div>
+											<!-- <div class="row">
+												<div class="col-lg-12">
+													<div class="form-group">
+														<select class="form-control" required>
+															<option value="" disabled selected>Select an option</option>
+															<option value="say hello">Say hello</option>
+															<option value="new project">New project</option>
+															<option value="feedback">Feedback</option>
+															<option value="other">Other</option>
+														</select>
+													</div>
+												</div>
+											</div> -->
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="form-group">
+														<textarea class="form-control" name="message" rows="4" placeholder="Your Message" required=""></textarea>
+													</div>
+												</div>
+											</div>
 
-								
-								
-								<!-- End isotope item -->
+											<div class="small text-gray"><em>* All fields are required!</em></div>
 
-							</div>
-							<!-- End isotope items wrap -->
+										</div> <!-- /.contact-form-inner -->
 
-						</div>
-						<!-- End isotope -->
+										<div class="row">
+											<div class="col-lg-12">
+												<button type="submit" class="btn btn-primary btn-lg btn-block margin-top-40">Send Message</button>
+											</div>
+										</div>
+									</form>
+									<!-- End contact form -->
 
-					</div> <!-- /.isotope-wrap -->
+								</div>
+								<!-- End split box content -->
 
+							</div> <!-- /.col -->
+						</div> <!-- /.row-height -->
+					</div> <!-- /.row -->
+
+					<div class="row">
+						<div class="col-lg-12 no-padding">
+
+							<!-- Begin custom Google Map 
+							=============================
+							* Tutorial: https://developers.google.com/maps/documentation/javascript/tutorial
+							* Styles: https://snazzymaps.com/
+							-->
+							<div id="map"></div>
+							<!-- End custom Google Map -->
+
+						</div> <!-- /.col -->
+					</div> <!-- /.row -->
+					
 				</div> <!-- /.container -->
 			</section>
-			<!-- End gallery single section -->
+			<!-- End split box section -->
+
 
 		</div>
 		<!-- End body content -->
+
+
+		<!-- Scroll to top button -->
+		<a href="#body-content" class="scrolltotop sm-scroll" title="Scroll to top"><i class="fas fa-chevron-up"></i></a>
 
 
 
@@ -429,13 +414,17 @@
 		<script src="static/js/lightgallery.min.js"></script> <!-- lightGallery JS (http://sachinchoolur.github.io/lightGallery) -->
 		<script src="static/js/lightgallery-plugins.js"></script> <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
 		
+		
+
+		<!-- Google maps JS (https://developers.google.com/maps/documentation/javascript/tutorial). Only for contact page!!! -->
+		<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo5b533IB2iuDcTn2razvfjyc_rpZdiRw&callback=initMap"></script> 
+		<script src="static/js/map.js"></script> 
+
 		<!-- Theme master JS -->
 		<script src="static/js/theme.js"></script>
-		<script>
-			function goBack() {
-				window.history.back();
-			}
-		</script>
+
+
+
 	</body>
 
 </html>

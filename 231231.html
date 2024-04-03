@@ -367,7 +367,7 @@
 											</ul>
 											<!-- End gallery meta -->
 
-											<a href="" class="gs-back-to-list"><i class="fas fa-long-arrow-alt-left"></i> Go Back</a>
+											<a onclick="goBack()" class="gs-back-to-list"><i class="fas fa-long-arrow-alt-left"></i> Go Back</a>
 
 										</div> <!-- /.iso-text-box-wrap -->
 									</div>
@@ -415,8 +415,8 @@
                                     </a>
                                 </div>
                                 <div class="isotope-item iso-height-1">
-                                    <a href="gallery/231231/蕭張攝影-4237.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/231231/蕭張攝影-4237.jpg); background-position: 50% 50%"></div>
+                                    <a href="gallery/231231/蕭張攝影-4262.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/231231/蕭張攝影-4262.jpg); background-position: 50% 50%"></div>
                                         <div class="gs-item-cover">
                                             <div class="gs-item-info">
                                                 <span class="s-icon"><i class="fas fa-search"></i></span>
@@ -495,7 +495,11 @@
 		
 		<!-- Theme master JS -->
 		<script src="static/js/theme.js"></script>
-
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
 	</body>
 
 </html>

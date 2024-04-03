@@ -367,7 +367,7 @@
 											</ul>
 											<!-- End gallery meta -->
 
-											<a href="" class="gs-back-to-list"><i class="fas fa-long-arrow-alt-left"></i> Go Back</a>
+											<a onclick="goBack()" class="gs-back-to-list"><i class="fas fa-long-arrow-alt-left"></i> Go Back</a>
 
 										</div> <!-- /.iso-text-box-wrap -->
 									</div>
@@ -676,6 +676,11 @@
 		
 		<!-- Theme master JS -->
 		<script src="static/js/theme.js"></script>
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
 
 	</body>
 
