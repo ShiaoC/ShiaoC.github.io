@@ -1,0 +1,428 @@
+/* --------------------------------------------------------------------
+* Template Dark Style (FOR DEMO SITE ONLY!)
+-------------------------------------------------------------------- */
+
+
+/* Table of Content
+====================
+1. General
+2. Page preloader
+3. Header
+4. Menu
+5. Mobile header
+6. Follow me buttons
+7. Gallery list
+8. Gallery single
+9. Blog list
+10. Blog single
+11. Pagination
+12. OWL carousel
+13. Buttons
+14. Forms
+15. Modal
+16. Split box
+17. Contact
+18. Demos
+19. Miscellaneous
+*/
+
+
+body.dark-style {
+	background-color: #0a0a0a;
+	color: #CCC;
+}
+
+body.dark-style .h1, 
+body.dark-style .h2, 
+body.dark-style .h3, 
+body.dark-style .h4, 
+body.dark-style .h5, 
+body.dark-style .h6, 
+body.dark-style h1, 
+body.dark-style h2, 
+body.dark-style h3, 
+body.dark-style h4, 
+body.dark-style h5, 
+body.dark-style h6 {
+	color: #FFF;
+}
+
+/* page preloader */
+body.dark-style .pace-active {
+	background-color: #0a0a0a;
+}
+
+/* header */
+body.dark-style #header {
+	background-color: #111;
+	color: #BBB;
+}
+body.dark-style.menu-open #header {
+	-webkit-box-shadow: 3px 0 10px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 3px 0 10px rgba(0, 0, 0, 0.4);
+	box-shadow: 3px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* menu */
+body.dark-style #header ul.menu-list > li > a {
+	color: #BBB;
+}
+body.dark-style #header ul.menu-list > li > a:hover, 
+body.dark-style #header ul.menu-list > li.active > a {
+	color: #ea4e4e;
+}
+body.dark-style #header ul.menu-list .sub-menu > li > a {
+	color: #808080;
+}
+body.dark-style #header ul.menu-list .sub-menu > li > a:hover, 
+body.dark-style #header ul.menu-list .sub-menu > li.active > a {
+	color: #ea4e4e;
+}
+
+body.dark-style #header .header-menu-icon {
+	color: #BBB;
+}
+body.dark-style #header .header-menu-icon:hover {
+	color: #ea4e4e;
+}
+
+body.dark-style #header .header-contact-icon {
+	color: #BBB;
+}
+body.dark-style #header .header-contact-icon:hover {
+	color: #ea4e4e;
+}
+
+/* mobile header */
+body.dark-style #mobile-header {
+	background-color: #111;
+	border-bottom: none;
+}
+
+/* follow me buttons */
+body.dark-style .follow-me-buttons a {
+	color: #BBB;
+}
+body.dark-style .follow-me-buttons a:hover {
+	color: #ea4e4e;
+}
+
+/* gallery list */
+body.dark-style .gl-item-info {
+	background-color: #111;
+}
+body.dark-style .gl-item-title {
+	color: #CCC;
+}
+body.dark-style .gl-item-caption .gl-item-count {
+	color: #8e8e8e;
+}
+body.dark-style .gli-alter-2 .gl-item-title {
+	color: #FFF;
+}
+body.dark-style .gli-alter-1 .gl-item-caption .gl-item-count {
+	color: #d2d2d2;
+}
+
+body.dark-style .gli-alter-1 .gl-item-info {
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(17,17,17,0.8) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(17,17,17,0.8) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(17,17,17,0.8) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc111111',GradientType=0 );
+}
+body.dark-style .gli-alter-1 .gl-item-title {
+	color: #FFF;
+}
+body.dark-style .gli-alter-2 .gl-item-info {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+body.dark-style .gli-alter-3 .gl-item-info {
+	background-color: rgba(234, 78, 78, 0.96);
+}
+@media (max-width: 992px) {
+	body.dark-style .gli-alter-3 .gl-item-info {
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(17,17,17,0.8) 100%);
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(17,17,17,0.8) 100%);
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(17,17,17,0.8) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc111111',GradientType=0 );
+	}
+}
+body.dark-style .gli-alter-3 .gl-item-title {
+	color: #FFF;
+}
+
+@media (min-width: 992px) {
+	body.dark-style .gallery-list-slider.gls-center .cc-item .cover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+}
+
+/* gallery single */
+body.dark-style .iso-text-box-wrap,
+body.dark-style .gs-sidebar,
+body.dark-style .gallery-single-top-info {
+	background-color: #111;
+}
+body.dark-style .gallery-single-item .gs-item-cover {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+body.dark-style .gallery-single-item .gs-item-info .s-icon {
+	color: #FFF;
+}
+body.dark-style #gallery.cover-simple .gs-item-cover {
+	background-color: rgba(0, 0, 0, 0.3) !important;
+}
+@media (min-width: 992px) {
+	body.dark-style .gallery-single-slider.gss-center .cc-item .cover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+}
+
+/* blog list */
+body.dark-style .blog-list-grid .bl-item-info {
+	background-color: #111;
+}
+body.dark-style .bl-item-title, 
+body.dark-style .bl-item-title h2 {
+	color: #CCC;
+}
+body.dark-style .bl-item-title:hover, 
+body.dark-style .bl-item-title:focus, 
+body.dark-style .bl-item-title h2:hover, 
+body.dark-style .bl-item-title h2:focus { 
+	color: #ea4e4e;
+}
+body.dark-style .bl-item-desc {
+	color: #888;
+}
+body.dark-style .bl-item-read-more span, 
+body.dark-style .bl-item-read-more span:before, 
+body.dark-style .bl-item-read-more span:after {
+	background-color: #4e4e4e;
+}
+
+body.dark-style .sidebar-widget {
+	background-color: #111;
+	-webkit-box-shadow: 0 7px 5px -6px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 7px 5px -6px rgba(0,0,0,0.6);
+	box-shadow: 0 7px 5px -6px rgba(0,0,0,0.6);
+}
+body.dark-style .bl-item-info {
+	background-color: #080808;
+}
+body.dark-style .blog-single-tags span,
+body.dark-style .sidebar-categories > ul > li > a,
+body.dark-style .sidebar-post-list .post-data .post-title a,
+body.dark-style .sidebar-comment-data .author a {
+	color: #CCC;
+}
+body.dark-style .sidebar-comment-wrap .sidebar-comment a,
+body.dark-style .blog-single-tags a,
+body.dark-style .sidebar-tags a,
+body.dark-style .blog-author-more {
+	color: #888;
+}
+body.dark-style .sidebar-post-list .post-data .post-title a:hover,
+body.dark-style .sidebar-comment-data .author a:hover,
+body.dark-style .sidebar-categories > ul > li > a:hover,
+body.dark-style .blog-author-more:hover {
+	color: #ea4e4e;
+}
+
+body.dark-style .sidebar-categories > ul > li > a span {
+	background-color: #292929;
+	color: #999;
+}
+body.dark-style .sidebar-categories > ul > li > a:hover span {
+	background-color: #ea4e4e;
+	color: #FFF;
+}
+body.dark-style .sidebar-comment-wrap .sidebar-comment a:hover {
+	color: #CCC;
+}
+body.dark-style .blog-single-tags a:hover,
+body.dark-style .sidebar-tags a:hover {
+	color: #FFF;
+}
+
+/* blog single */
+body.dark-style .blog-single-post,
+body.dark-style .blog-single-post-heading,
+body.dark-style .blog-single-nav,
+body.dark-style .related-posts,
+body.dark-style .blog-single-share,
+body.dark-style .media-body,
+body.dark-style #post-comment-form {
+	background-color: #111;
+}
+body.dark-style .blog-single-post-title,
+body.dark-style .blog-single-meta .article-author,
+body.dark-style .blog-single-meta .article-author a,
+body.dark-style .bs-nav-title, 
+body.dark-style .bs-nav-title h4,
+body.dark-style .related-posts-item .rp-item-title, 
+body.dark-style .related-posts-item .rp-item-title h4 {
+	color: #CCC;
+}
+body.dark-style .blog-single-links,
+body.dark-style .blog-single-links a,
+body.dark-style .media-heading a {
+	color: #999;
+}
+body.dark-style .blog-single-meta .article-author a:hover,
+body.dark-style .blog-single-links a:hover, 
+body.dark-style .blog-single-links a:focus, 
+body.dark-style .blog-single-links .favorite-btn:hover,
+body.dark-style .bs-nav-title:hover, body.dark-style .bs-nav-title h4:hover,
+body.dark-style .related-posts-item .rp-item-title:hover, 
+body.dark-style .related-posts-item .rp-item-title h4:hover,
+body.dark-style .media-heading a:hover {
+	color: #ea4e4e;
+}
+
+@media (max-width: 992px) {
+	body.dark-style .blog-single-share {
+		background-color: rgba(17, 17, 17, 0.67);
+	}
+}
+
+/* pagination */
+body.dark-style .pagination > li > a, 
+body.dark-style .pagination > li > span {
+	color: #CCC;
+	background-color: #222;
+	border: 1px solid #292929;
+}
+body.dark-style .pagination > .active > a, 
+body.dark-style .pagination > .active > a:focus, 
+body.dark-style .pagination > .active > a:hover, 
+body.dark-style .pagination > .active > span, 
+body.dark-style .pagination > .active > span:focus, 
+body.dark-style .pagination > .active > span:hover {
+	color: #FFF;
+	background-color: #ea4e4e;
+	border-color: #ea4e4e;
+}
+body.dark-style .pagination > li > a:focus, 
+body.dark-style .pagination > li > a:hover, 
+body.dark-style .pagination > li > span:focus, 
+body.dark-style .pagination > li > span:hover {
+	color: #FFF;
+	background-color: #313131;
+	border-color: #313131;
+}
+
+/* owl carousel */
+body.dark-style .nav-light .owl-nav .owl-prev, 
+body.dark-style .nav-light .owl-nav .owl-next {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+body.dark-style .nav-light .owl-nav .owl-prev:hover, body.dark-style .owl-carousel.nav-light .owl-nav .owl-prev:hover,
+body.dark-style .nav-light .owl-nav .owl-next:hover, body.dark-style .owl-carousel.nav-light .owl-nav .owl-next:hover {
+	background-color: rgba(255, 255, 255, 0.07);
+}
+body.dark-style .nav-light .owl-nav .owl-prev {
+	background-image: url(../image/arrow-left-light.png);
+}
+body.dark-style .nav-light .owl-nav .owl-next {
+	background-image: url(../image/arrow-right-light.png);
+}
+
+/* buttons */
+body.dark-style .btn-default {
+	color: #DDD;
+	background-color: rgba(189, 189, 189, 0.25);
+}
+body.dark-style .btn-default.active, 
+body.dark-style .btn-default.focus, 
+body.dark-style .btn-default:active, 
+body.dark-style .btn-default:focus, 
+body.dark-style .btn-default:hover, 
+body.dark-style .open > .dropdown-toggle.btn-default {
+	color: #FFF;
+	background-color: rgba(189, 189, 189, 0.43)
+}
+
+body.dark-style .btn-dark-bordered {
+	color: #CCC;
+	border-color: #CCC;
+}
+body.dark-style .btn-dark-bordered.active, 
+body.dark-style .btn-dark-bordered.focus, 
+body.dark-style .btn-dark-bordered:active, 
+body.dark-style .btn-dark-bordered:focus, 
+body.dark-style .btn-dark-bordered:hover, 
+body.dark-style .open > .dropdown-toggle.btn-dark-bordered {
+	color: #222;
+	background-color: #CCC;
+	border-color: #CCC;
+}
+
+/* forms */
+body.dark-style .form-control {
+	background-color: #101010;
+	color: #CCC;
+}
+body.dark-style .form-btn-inside button {
+	color: #CCC;
+}
+body.dark-style select option {
+	color: #CCC;
+}
+
+/* modal */
+body.dark-style .modal {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+body.dark-style .modal-dialog {
+	background-color: #111;
+	color: #CCC;
+}
+body.dark-style .modal-share .grab-link {
+	background-color: rgba(128, 128, 128, 0.11);
+	border: none;
+}
+body.dark-style .modal-header .close {
+	color: #CCC;
+}
+
+/* split box */
+body.dark-style .split-box,
+body.dark-style .split-box-content.shifted-left,
+body.dark-style .split-box-content.shifted-right {
+	background-color: #000;
+}
+
+/* contact */
+body.dark-style .contact-simple {
+	background-color: #111;
+}
+body.dark-style #contact-section .cover {
+	background-color: rgba(0, 0, 0, 0.82);
+}
+body.dark-style .contact-info-wrap {
+	background-color: rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 0 7px 5px -6px #000;
+	-moz-box-shadow: 0 7px 5px -6px #000;
+	box-shadow: 0 7px 5px -6px #000;
+}
+
+/* demos */
+body.dark-style .demo-thumbnails-section {
+	background-color: #000;
+}
+body.dark-style .demo-thumbnail-btn {
+	color: #CCC;
+}
+body.dark-style .demo-thumbnail-btn:hover, 
+body.dark-style .demo-thumbnail-btn:focus {
+	color: #ea4e4e;
+}
+body.dark-style .demo-thumbnail-image-wrap {
+	border-color: #1f1f1f;
+}
+
+/* miscellaneous */
+body.dark-style #page-section .ps-page-simple {
+	background-color: #111;
+}
