@@ -57,12 +57,26 @@
 		<!-- Page cover (if menu is open) -->
 		<span class="page-cover"></span>
 
+<!-- ===========
+	///// Body /////
+	================
+	* Add class "temp-uppercase" to enable uppercase letters (eg. headings, menu links).
+	* Add class "temp-letter-spacing" to enable spacing between letters (eg. headings, menu links).
+	* Use class "temp-grayscale" to enable grayscale effect when menu is open (no effect on all browsers!).
+	* Add class "animsition" to enable page transition while page loads.
+	-->
+	<body class="temp-uppercase animsition" data-spy="scroll" data-target="#menu">
+
+
+		<!-- Page cover (if menu is open) -->
+		<span class="page-cover"></span>
+
 
 		<!-- ===================
 		///// Begin header /////
 		========================
 		* Add class "header-dark" to enable header dark style.
-		* Add class "header-click", "header-hover" or "header-fixed" to change behavior of the header (one of them is required!).
+		* Use class "header-click", "header-hover" or "header-fixed" to change behavior of the header (one of them is required!).
 		-->
 		<div id="header" class="header-hover">
 
@@ -71,7 +85,7 @@
 
 			<!-- Begin logo small -->
 			<div class="logo-small">
-				<a href="index.html"><img src="static/picture/logo-small.png" title="Home" alt="logo"></a>
+				<a href="home.html"><img src="images/logo.png" title="Home" alt="logo"></a>
 			</div>
 			<!-- End logo small -->
 
@@ -91,7 +105,7 @@
 
 					<!-- Begin logo big -->
 					<div class="logo-big">
-						<a href="index.html"><img src="static/picture/logo-big.png" title="Home" alt="logo"></a>
+						<a href="home.html"><img src="images/logo.png" title="Home" alt="logo"></a>
 					</div>
 					<!-- End logo big -->
 					
@@ -103,80 +117,23 @@
 
 					<!-- Begin menu -->
 					<div id="menu">
-						<ul class="menu-list">
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">Home</a> 
-								<ul class="sub-menu">
-									<li><a href="intro-image.html">Intro Image</a></li>
-									<li><a href="intro-video.html">Intro Video</a></li>
-									<li><a href="intro-slideshow.html">Intro Slideshow</a></li>
-								</ul>
-							</li>
-							<li class="has-children active">
-								<a href="#" class="sub-menu-trigger">About Me</a> 
-								<ul class="sub-menu">
-									<li><a href="">About Me</a></li>
-									<li><a href="about-me-simple.html">About Me Simple</a></li>
-								</ul>
-							</li>
+						<ul class="nav menu-list"> <!-- class "nav" is for bootstrap scrollspy only -->
+							<!-- 
 							<li class="has-children">
 								<a href="#" class="sub-menu-trigger">Albums</a> 
 								<ul class="sub-menu">
-									<li><a href="gallery-list-categories.html">Categories Grid</a></li>
-									<li><a href="gallery-list-striped-categories.html">Striped Categories</a></li>
-									<li><a href="gallery-list-striped-albums.html">Striped Albums</a></li>
-									<li><a href="gallery-list-page-header.html">With Page Header</a></li>
-									<li><a href="gallery-list-no-crop.html">No Crop</a></li>
-									<li><a href="gallery-list-horizontal-scroll.html">Horizontal Scroll</a></li>
-									<li><a href="gallery-list-slider.html">Slider</a></li>
-									<li><a href="gallery-list-slider-no-crop.html">Slider No Crop</a></li>
-									<li><a href="gallery-list-slideshow.html">Slideshow</a></li>
-									<li><a href="gallery-list-grid-no-filter.html">Without Filter</a></li>
+									<li><a href="#demo-albums-list" class="sm-scroll">Albums List</a></li>
+									<li><a href="#demo-albums-list-item-styles" class="sm-scroll">Item Styles</a></li>
+									<li><a href="#demo-albums-list-grid" class="sm-scroll">Grid</a></li>
+									<li><a href="#demo-albums-list-masonry" class="sm-scroll">Masonry</a></li>
 								</ul>
 							</li>
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">Gallery</a> 
-								<ul class="sub-menu">
-									<li><a href="gallery-single.html">Default</a></li>
-									<li><a href="gallery-single-no-crop.html">No Crop</a></li>
-									<li><a href="gallery-single-top-info.html">Top Info</a></li>
-									<li><a href="gallery-single-page-header.html">Page Header</a></li>
-									<li><a href="gallery-single-simple.html">Simple Grid</a></li>
-									<li><a href="gallery-single-slider.html">Slider</a></li>
-									<li><a href="gallery-single-slider-center.html">Slider Center</a></li>
-									<li><a href="gallery-single-sidebar-left-slider.html">Left Sidebar Slider</a></li>
-									<li><a href="gallery-single-sidebar-right-slider.html">Right Sidebar Slider</a></li>
-									<li><a href="gallery-single-sidebar-left-grid.html">Left Sidebar Grid</a></li>
-									<li><a href="gallery-single-sidebar-right-grid.html">Right Sidebar Grid</a></li>
-								</ul>
-							</li>
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">Blog</a> 
-								<ul class="sub-menu">
-									<li><a href="blog-list-classic.html">Classic</a></li>
-									<li><a href="blog-list-classic-no-sidebar.html">Classic No Sidebar</a></li>
-									<li><a href="blog-list-grid.html">Grid</a></li>
-									<li><a href="blog-list-grid-no-sidebar.html">Grid No Sidebar</a></li>
-									<li><a href="blog-single.html">Single Post</a></li>
-									<li><a href="blog-single-no-sidebar.html">Single No Sidebar</a></li>
-								</ul>
-							</li>
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">Contact</a> 
-								<ul class="sub-menu">
-									<li><a href="contact.html">Contact</a></li>
-									<li><a href="contact-simple.html">Contact Simple</a></li>
-								</ul>
-							</li>
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">Pages</a> 
-								<ul class="sub-menu">
-									<li><a href="page-dummy.html">Page 1</a></li>
-									<li><a href="page-dummy-2.html">Page 2</a></li>
-									<li><a href="page-dummy-classic.html">Page Classic</a></li>
-								</ul>
-							</li>
-							<li><a href="index.html">All Demos</a></li>
+							-->
+
+							<li><a href="home.html" class="sm-scroll">Home</a></li>
+							<li><a href="about-me.html" class="sm-scroll">About me</a></li>
+							<li><a href="list.html" class="sm-scroll">Works</a></li>
+							<li><a href="contact.html" class="sm-scroll">Contact</a></li>
 						</ul> <!-- /.menu-list -->
 					</div>
 					<!-- End menu -->
@@ -190,18 +147,17 @@
 					<!-- Begin follow me buttons -->
 					<div class="follow-me-buttons">
 						<ul>
-							<li><a href="javascript:;" title="Follow me on Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li> 
-							<li><a href="javascript:;" title="Follow me on Dribbble" target="_blank"><i class="fab fa-dribbble"></i></a></li> 
-							<li><a href="" title="Follow me on Behance" target="_blank"><i class="fab fa-behance"></i></a></li> 
-							<li><a href="mailto:info@your-email.com" title="Email Me" target="_blank"><i class="far fa-envelope"></i></a></li>
+							<li><a href="https://www.facebook.com/ShiaoC/" title="Follow me on Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li> 
+							<li><a href="gallery/contact.html" title="Follow me on Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li> 
+							<li><a href="saki.shiaochang@gmail.com" title="Email Me" target="_blank"><i class="far fa-envelope"></i></a></li>
 						</ul>
 					</div>
 					<!-- End follow me buttons -->
 
 					<!-- Begin copyright -->
 					<div class="copyright">
-						Copyright © 2016 <br>
-						<a target="_blank" href="javascript:;">Themetorium</a>
+						Copyright © 2024 <br>
+						<a target="_blank" href="javascript:;">ShiaoC</a>
 					</div>
 					<!-- End copyright -->
 
@@ -224,7 +180,7 @@
 
 			<!-- Begin logo small -->
 			<div class="logo-mobile">
-				<a href="index.html"><img src="static/picture/logo-small.png" alt="logo"></a>
+				<a href="index.html"><img src="images/logo.png" alt="logo"></a>
 			</div>
 			<!-- End logo small -->
 
@@ -278,8 +234,11 @@
 										<div class="about-me-sub">Programmer &amp; Photographer</div>
 
 										<div class="about-me-text">
-											<p>Hi，我是蕭張媛，一個正在準備研究所考試的資工大學生。 <br>
-											因為過去玩Cosplay看了很多攝影師總是拍不出我想要的構圖，所以毅然決定自己轉入攝影造福他人。</p>
+											<p>
+												Hi，我是蕭張媛，一個正在準備研究所考試的資工大學生。 <br>
+												因為過去玩Cosplay看了很多攝影師總是拍不出我想要的構圖，所以毅然決定自己轉入攝影造福他人。 <br>
+												想了解更多請點選連結前往個人網站。
+											</p>
 										</div>
 
 										<!-- Begin follow me buttons -->
@@ -288,7 +247,9 @@
 												<li><a href="https://www.facebook.com/ShiaoC/" title="Follow me on Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li> 
 												<li><a href="https://www.instagram.com/shiaoc.photography/" title="Follow me on Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li> 
 												<li><a href="mailto:shiaochang@gmail.com" title="Email Me" target="_blank"><i class="far fa-envelope"></i></a></li>
+												
 											</ul>
+											<a href="https://shiaoc.github.io" class="btn btn-dark-bordered margin-top-20">個人網站裝修中</a>
 										</div>
 										<!-- End follow me buttons -->
 
@@ -340,8 +301,8 @@
 												我使用的相機與鏡頭並非最高級，但絕對足以應對大部分狀況，可以攜帶電腦快速現場修圖，如有色調上的喜好亦能現場討論。
 											</p>
 										</div>
-										<a href="gallery-list.html" class="btn btn-primary margin-top-20">View My Work</a>
-										<a href="gallery-contact.html" class="btn btn-dark-bordered margin-top-20">Contact Me</a>
+										<a href="list.html" class="btn btn-primary margin-top-20">View My Work</a>
+										<a href="contact.html" class="btn btn-dark-bordered margin-top-20">Contact Me</a>
 									</div>
 									<!-- End split box content -->
 

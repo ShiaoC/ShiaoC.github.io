@@ -3,7 +3,7 @@
 	<head>
 
 		<!-- Title -->
-		<title>相簿 - ShiaoC</title>
+		<title>KICA4 - ShiaoC</title>
 
 		<!-- Meta -->
 		<meta charset="utf-8">
@@ -51,8 +51,8 @@
 	* Use class "temp-grayscale" to enable grayscale effect when menu is open (no effect on all browsers!).
 	* Add class "animsition" to enable page transition while page loads.
 	-->
-	<body class="temp-uppercase temp-grayscale animsition">
-		
+	<body class="temp-uppercase animsition" data-spy="scroll" data-target="#menu">
+
 
 		<!-- Page cover (if menu is open) -->
 		<span class="page-cover"></span>
@@ -71,7 +71,7 @@
 
 			<!-- Begin logo small -->
 			<div class="logo-small">
-				<a href="index.html"><img src="static/picture/logo-small.png" title="Home" alt="logo"></a>
+				<a href="home.html"><img src="images/logo.png" title="Home" alt="logo"></a>
 			</div>
 			<!-- End logo small -->
 
@@ -91,7 +91,7 @@
 
 					<!-- Begin logo big -->
 					<div class="logo-big">
-						<a href="index.html"><img src="static/picture/logo-big.png" title="Home" alt="logo"></a>
+						<a href="home.html"><img src="images/logo.png" title="Home" alt="logo"></a>
 					</div>
 					<!-- End logo big -->
 					
@@ -103,80 +103,23 @@
 
 					<!-- Begin menu -->
 					<div id="menu">
-						<ul class="menu-list">
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">Home</a> 
-								<ul class="sub-menu">
-									<li><a href="intro-image.html">Intro Image</a></li>
-									<li><a href="intro-video.html">Intro Video</a></li>
-									<li><a href="intro-slideshow.html">Intro Slideshow</a></li>
-								</ul>
-							</li>
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">About Me</a> 
-								<ul class="sub-menu">
-									<li><a href="about-me.html">About Me</a></li>
-									<li><a href="about-me-simple.html">About Me Simple</a></li>
-								</ul>
-							</li>
+						<ul class="nav menu-list"> <!-- class "nav" is for bootstrap scrollspy only -->
+							<!-- 
 							<li class="has-children">
 								<a href="#" class="sub-menu-trigger">Albums</a> 
 								<ul class="sub-menu">
-									<li><a href="gallery-list-categories.html">Categories Grid</a></li>
-									<li><a href="gallery-list-striped-categories.html">Striped Categories</a></li>
-									<li><a href="gallery-list-striped-albums.html">Striped Albums</a></li>
-									<li><a href="gallery-list-page-header.html">With Page Header</a></li>
-									<li><a href="gallery-list-no-crop.html">No Crop</a></li>
-									<li><a href="gallery-list-horizontal-scroll.html">Horizontal Scroll</a></li>
-									<li><a href="gallery-list-slider.html">Slider</a></li>
-									<li><a href="gallery-list-slider-no-crop.html">Slider No Crop</a></li>
-									<li><a href="gallery-list-slideshow.html">Slideshow</a></li>
-									<li><a href="gallery-list-grid-no-filter.html">Without Filter</a></li>
+									<li><a href="#demo-albums-list" class="sm-scroll">Albums List</a></li>
+									<li><a href="#demo-albums-list-item-styles" class="sm-scroll">Item Styles</a></li>
+									<li><a href="#demo-albums-list-grid" class="sm-scroll">Grid</a></li>
+									<li><a href="#demo-albums-list-masonry" class="sm-scroll">Masonry</a></li>
 								</ul>
 							</li>
-							<li class="has-children active">
-								<a href="#" class="sub-menu-trigger">Gallery</a> 
-								<ul class="sub-menu">
-									<li><a href="">Default</a></li>
-									<li><a href="gallery-single-no-crop.html">No Crop</a></li>
-									<li><a href="gallery-single-top-info.html">Top Info</a></li>
-									<li><a href="gallery-single-page-header.html">Page Header</a></li>
-									<li><a href="gallery-single-simple.html">Simple Grid</a></li>
-									<li><a href="gallery-single-slider.html">Slider</a></li>
-									<li><a href="gallery-single-slider-center.html">Slider Center</a></li>
-									<li><a href="gallery-single-sidebar-left-slider.html">Left Sidebar Slider</a></li>
-									<li><a href="gallery-single-sidebar-right-slider.html">Right Sidebar Slider</a></li>
-									<li><a href="gallery-single-sidebar-left-grid.html">Left Sidebar Grid</a></li>
-									<li><a href="gallery-single-sidebar-right-grid.html">Right Sidebar Grid</a></li>
-								</ul>
-							</li>
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">Blog</a> 
-								<ul class="sub-menu">
-									<li><a href="blog-list-classic.html">Classic</a></li>
-									<li><a href="blog-list-classic-no-sidebar.html">Classic No Sidebar</a></li>
-									<li><a href="blog-list-grid.html">Grid</a></li>
-									<li><a href="blog-list-grid-no-sidebar.html">Grid No Sidebar</a></li>
-									<li><a href="blog-single.html">Single Post</a></li>
-									<li><a href="blog-single-no-sidebar.html">Single No Sidebar</a></li>
-								</ul>
-							</li>
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">Contact</a> 
-								<ul class="sub-menu">
-									<li><a href="contact.html">Contact</a></li>
-									<li><a href="contact-simple.html">Contact Simple</a></li>
-								</ul>
-							</li>
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">Pages</a> 
-								<ul class="sub-menu">
-									<li><a href="page-dummy.html">Page 1</a></li>
-									<li><a href="page-dummy-2.html">Page 2</a></li>
-									<li><a href="page-dummy-classic.html">Page Classic</a></li>
-								</ul>
-							</li>
-							<li><a href="index.html">All Demos</a></li>
+							-->
+
+							<li><a href="home.html" class="sm-scroll">Home</a></li>
+							<li><a href="about-me.html" class="sm-scroll">About me</a></li>
+							<li><a href="list.html" class="sm-scroll">Works</a></li>
+							<li><a href="contact.html" class="sm-scroll">Contact</a></li>
 						</ul> <!-- /.menu-list -->
 					</div>
 					<!-- End menu -->
@@ -190,18 +133,17 @@
 					<!-- Begin follow me buttons -->
 					<div class="follow-me-buttons">
 						<ul>
-							<li><a href="javascript:;" title="Follow me on Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li> 
-							<li><a href="javascript:;" title="Follow me on Dribbble" target="_blank"><i class="fab fa-dribbble"></i></a></li> 
-							<li><a href="" title="Follow me on Behance" target="_blank"><i class="fab fa-behance"></i></a></li> 
-							<li><a href="mailto:info@your-email.com" title="Email Me" target="_blank"><i class="far fa-envelope"></i></a></li>
+							<li><a href="https://www.facebook.com/ShiaoC/" title="Follow me on Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li> 
+							<li><a href="gallery/contact.html" title="Follow me on Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li> 
+							<li><a href="saki.shiaochang@gmail.com" title="Email Me" target="_blank"><i class="far fa-envelope"></i></a></li>
 						</ul>
 					</div>
 					<!-- End follow me buttons -->
 
 					<!-- Begin copyright -->
 					<div class="copyright">
-						Copyright © 2016 <br>
-						<a target="_blank" href="javascript:;">Themetorium</a>
+						Copyright © 2024 <br>
+						<a target="_blank" href="javascript:;">ShiaoC</a>
 					</div>
 					<!-- End copyright -->
 
@@ -279,17 +221,18 @@
 										<div class="iso-text-box-wrap">
 											<div class="iso-text-box-inner">
 												<div class="iso-text-box">
-													<h3 class="gs-item-title font-alter-1">2023 南台科大SIK</h3>
-													<span class="gs-item-category">Portraits, Cosplay</span>
+													<h3 class="gs-item-title font-alter-1">高雄巨蛋KICA4</h3>
+													<span class="gs-item-category">Portraits, Fisheye, Cosplay</span>
 
 													<!-- Begin text box description
 													================================
 													* Do not use long text. Short text only!!!
 													-->
 													<p class="gs-item-description">
-														<a target="_blank" href="javascript:;">2023.05.21</a><br>
-                                                        從嘉義騎車下去參加，導航說一個半小時但我騎了快三個小時.... <br>
-                                                        算是可愛的Canon 100D舊相機的最後一次拍攝，蠻有紀念意義的。
+														<a target="_blank" href="javascript:;">2023.10.07</a><br>
+                                                        第一次帶魚眼鏡頭去參加動漫展，效果意外的好，照片放上社團馬上就吸引到大家的目光了<br>
+                                                        當天上午還先陪子晉去了趟咒術迴戰展，魚眼鏡頭也是和他討論過後嘗試買的，看來是買對了www <br><br>
+                                                        就是閃光燈有點重，有點想換了... <br>
 													</p>
 													<!-- End text box description -->
 
@@ -381,141 +324,140 @@
 								-->
 								
 
+                                <div class="isotope-item iso-height-2">
+                                    <a href="231007/387143755_297473879706826_6245790546215412574_n.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(231007/387143755_297473879706826_6245790546215412574_n.jpg); background-position: 50% 50%"></div>
+                                        <div class="gs-item-cover">
+                                            <div class="gs-item-info">
+                                                <span class="s-icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="isotope-item iso-height-2">
+                                    <a href="231007/386647889_297474173040130_4671499395845975734_n.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(231007/386647889_297474173040130_4671499395845975734_n.jpg); background-position: 50% 50%"></div>
+                                        <div class="gs-item-cover">
+                                            <div class="gs-item-info">
+                                                <span class="s-icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="isotope-item iso-height-2">
+                                    <a href="231007/387143576_297474143040133_1027713785087851746_n.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(231007/387143576_297474143040133_1027713785087851746_n.jpg); background-position: 50% 50%"></div>
+                                        <div class="gs-item-cover">
+                                            <div class="gs-item-info">
+                                                <span class="s-icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="isotope-item iso-height-2">
+                                    <a href="231007/386747689_297472659706948_4717468884137715876_n.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(231007/386747689_297472659706948_4717468884137715876_n.jpg); background-position: 50% 50%"></div>
+                                        <div class="gs-item-cover">
+                                            <div class="gs-item-info">
+                                                <span class="s-icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="isotope-item iso-height-2">
+                                    <a href="231007/386463062_297473836373497_8107780371490173908_n.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(231007/386463062_297473836373497_8107780371490173908_n.jpg); background-position: 50% 50%"></div>
+                                        <div class="gs-item-cover">
+                                            <div class="gs-item-info">
+                                                <span class="s-icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="isotope-item iso-height-2">
+                                    <a href="231007/386778080_297473646373516_6195766860116217487_n.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(231007/386778080_297473646373516_6195766860116217487_n.jpg); background-position: 50% 50%"></div>
+                                        <div class="gs-item-cover">
+                                            <div class="gs-item-info">
+                                                <span class="s-icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="isotope-item iso-height-2">
+                                    <a href="231007/386767261_297474789706735_3337211743551168632_n.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(231007/386767261_297474789706735_3337211743551168632_n.jpg); background-position: 50% 50%"></div>
+                                        <div class="gs-item-cover">
+                                            <div class="gs-item-info">
+                                                <span class="s-icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="isotope-item iso-height-2">
+                                    <a href="231007/386723997_297473993040148_4493496891571309707_n.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(231007/386723997_297473993040148_4493496891571309707_n.jpg); background-position: 50% 50%"></div>
+                                        <div class="gs-item-cover">
+                                            <div class="gs-item-info">
+                                                <span class="s-icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="isotope-item iso-height-2">
+                                    <a href="231007/385329315_297474299706784_401862460450970545_n.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(231007/385329315_297474299706784_401862460450970545_n.jpg); background-position: 50% 50%"></div>
+                                        <div class="gs-item-cover">
+                                            <div class="gs-item-info">
+                                                <span class="s-icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="isotope-item iso-height-2">
+                                    <a href="231007/386405042_297474406373440_2075078110235685873_n.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(231007/386405042_297474406373440_2075078110235685873_n.jpg); background-position: 50% 50%"></div>
+                                        <div class="gs-item-cover">
+                                            <div class="gs-item-info">
+                                                <span class="s-icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+            
+                                <div class="isotope-item iso-height-2">
+                                    <a href="231007/385324247_297473946373486_9112050886426428529_n.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(231007/385324247_297473946373486_9112050886426428529_n.jpg); background-position: 50% 50%"></div>
+                                        <div class="gs-item-cover">
+                                            <div class="gs-item-info">
+                                                <span class="s-icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="isotope-item iso-height-2">
+                                    <a href="231007/386763784_297475113040036_4865307866413213830_n.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(231007/386763784_297475113040036_4865307866413213830_n.jpg); background-position: 50% 50%"></div>
+                                        <div class="gs-item-cover">
+                                            <div class="gs-item-info">
+                                                <span class="s-icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="isotope-item iso-height-2">
+                                    <a href="231007/385328523_297473909706823_1006830261206100736_n.jpg" class="gallery-single-item lg-trigger">
+                                        <div class="gs-item-image bg-image" style="background-image: url(231007/385328523_297473909706823_1006830261206100736_n.jpg); background-position: 50% 50%"></div>
+                                        <div class="gs-item-cover">
+                                            <div class="gs-item-info">
+                                                <span class="s-icon"><i class="fas fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                                                                                                                                                                          
 
-                                <div class="isotope-item iso-height-2">
-                                    <a href="gallery/230521/348458435_595296482386008_9023823983008042409_n.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/230521/348458435_595296482386008_9023823983008042409_n.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-2">
-                                    <a href="gallery/230521/348554642_7047747991908781_1699853215027690317_n.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/230521/348554642_7047747991908781_1699853215027690317_n.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-            
-                                <div class="isotope-item iso-height-1">
-                                    <a href="gallery/230521/348564874_784626653192255_877556098124400632_n.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/230521/348564874_784626653192255_877556098124400632_n.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-2">
-                                    <a href="gallery/230521/348594537_721988469703820_2974546394426341852_n.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/230521/348594537_721988469703820_2974546394426341852_n.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-1">
-                                    <a href="gallery/230521/348663523_6553270881404345_1705234938391747831_n.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/230521/348663523_6553270881404345_1705234938391747831_n.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-2">
-                                    <a href="gallery/230521/348655135_811463707165787_6542375375906228427_n.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/230521/348655135_811463707165787_6542375375906228427_n.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-2">
-                                    <a href="gallery/230521/348548623_9238281016242640_5276342729474989846_n.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/230521/348548623_9238281016242640_5276342729474989846_n.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-2">
-                                    <a href="gallery/230521/348558663_2321961617989846_3057143614097542085_n.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/230521/348558663_2321961617989846_3057143614097542085_n.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-            
-                                <div class="isotope-item iso-height-2">
-                                    <a href="gallery/230521/348548283_232902639364813_2798340498022124738_n.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/230521/348548283_232902639364813_2798340498022124738_n.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-2">
-                                    <a href="gallery/230521/348819818_1584876035343277_7557476005414174259_n.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/230521/348819818_1584876035343277_7557476005414174259_n.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-2">
-                                    <a href="gallery/230521/348554808_1215477795831638_7753533871026602914_n.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/230521/348554808_1215477795831638_7753533871026602914_n.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-            
-                                <div class="isotope-item iso-height-2">
-                                    <a href="gallery/230521/348575591_944441890202217_8296904854066268397_n.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/230521/348575591_944441890202217_8296904854066268397_n.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-2">
-                                    <a href="gallery/230521/348562605_1735555466887234_4412863639701138265_n.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/230521/348562605_1735555466887234_4412863639701138265_n.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                                                                                                                                                                                                                                                                
 
 
 

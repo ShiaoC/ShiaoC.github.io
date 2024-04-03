@@ -3,7 +3,7 @@
 	<head>
 
 		<!-- Title -->
-		<title>2024安順新年營會 - ShiaoC</title>
+		<title>相簿 - ShiaoC</title>
 
 		<!-- Meta -->
 		<meta charset="utf-8">
@@ -51,8 +51,8 @@
 	* Use class "temp-grayscale" to enable grayscale effect when menu is open (no effect on all browsers!).
 	* Add class "animsition" to enable page transition while page loads.
 	-->
-	<body class="temp-uppercase temp-grayscale animsition">
-		
+	<body class="temp-uppercase animsition" data-spy="scroll" data-target="#menu">
+
 
 		<!-- Page cover (if menu is open) -->
 		<span class="page-cover"></span>
@@ -71,7 +71,7 @@
 
 			<!-- Begin logo small -->
 			<div class="logo-small">
-				<a href="index.html"><img src="static/picture/logo-small.png" title="Home" alt="logo"></a>
+				<a href="home.html"><img src="images/logo.png" title="Home" alt="logo"></a>
 			</div>
 			<!-- End logo small -->
 
@@ -91,7 +91,7 @@
 
 					<!-- Begin logo big -->
 					<div class="logo-big">
-						<a href="index.html"><img src="static/picture/logo-big.png" title="Home" alt="logo"></a>
+						<a href="home.html"><img src="images/logo.png" title="Home" alt="logo"></a>
 					</div>
 					<!-- End logo big -->
 					
@@ -103,80 +103,23 @@
 
 					<!-- Begin menu -->
 					<div id="menu">
-						<ul class="menu-list">
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">Home</a> 
-								<ul class="sub-menu">
-									<li><a href="intro-image.html">Intro Image</a></li>
-									<li><a href="intro-video.html">Intro Video</a></li>
-									<li><a href="intro-slideshow.html">Intro Slideshow</a></li>
-								</ul>
-							</li>
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">About Me</a> 
-								<ul class="sub-menu">
-									<li><a href="about-me.html">About Me</a></li>
-									<li><a href="about-me-simple.html">About Me Simple</a></li>
-								</ul>
-							</li>
+						<ul class="nav menu-list"> <!-- class "nav" is for bootstrap scrollspy only -->
+							<!-- 
 							<li class="has-children">
 								<a href="#" class="sub-menu-trigger">Albums</a> 
 								<ul class="sub-menu">
-									<li><a href="gallery-list-categories.html">Categories Grid</a></li>
-									<li><a href="gallery-list-striped-categories.html">Striped Categories</a></li>
-									<li><a href="gallery-list-striped-albums.html">Striped Albums</a></li>
-									<li><a href="gallery-list-page-header.html">With Page Header</a></li>
-									<li><a href="gallery-list-no-crop.html">No Crop</a></li>
-									<li><a href="gallery-list-horizontal-scroll.html">Horizontal Scroll</a></li>
-									<li><a href="gallery-list-slider.html">Slider</a></li>
-									<li><a href="gallery-list-slider-no-crop.html">Slider No Crop</a></li>
-									<li><a href="gallery-list-slideshow.html">Slideshow</a></li>
-									<li><a href="gallery-list-grid-no-filter.html">Without Filter</a></li>
+									<li><a href="#demo-albums-list" class="sm-scroll">Albums List</a></li>
+									<li><a href="#demo-albums-list-item-styles" class="sm-scroll">Item Styles</a></li>
+									<li><a href="#demo-albums-list-grid" class="sm-scroll">Grid</a></li>
+									<li><a href="#demo-albums-list-masonry" class="sm-scroll">Masonry</a></li>
 								</ul>
 							</li>
-							<li class="has-children active">
-								<a href="#" class="sub-menu-trigger">Gallery</a> 
-								<ul class="sub-menu">
-									<li><a href="">Default</a></li>
-									<li><a href="gallery-single-no-crop.html">No Crop</a></li>
-									<li><a href="gallery-single-top-info.html">Top Info</a></li>
-									<li><a href="gallery-single-page-header.html">Page Header</a></li>
-									<li><a href="gallery-single-simple.html">Simple Grid</a></li>
-									<li><a href="gallery-single-slider.html">Slider</a></li>
-									<li><a href="gallery-single-slider-center.html">Slider Center</a></li>
-									<li><a href="gallery-single-sidebar-left-slider.html">Left Sidebar Slider</a></li>
-									<li><a href="gallery-single-sidebar-right-slider.html">Right Sidebar Slider</a></li>
-									<li><a href="gallery-single-sidebar-left-grid.html">Left Sidebar Grid</a></li>
-									<li><a href="gallery-single-sidebar-right-grid.html">Right Sidebar Grid</a></li>
-								</ul>
-							</li>
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">Blog</a> 
-								<ul class="sub-menu">
-									<li><a href="blog-list-classic.html">Classic</a></li>
-									<li><a href="blog-list-classic-no-sidebar.html">Classic No Sidebar</a></li>
-									<li><a href="blog-list-grid.html">Grid</a></li>
-									<li><a href="blog-list-grid-no-sidebar.html">Grid No Sidebar</a></li>
-									<li><a href="blog-single.html">Single Post</a></li>
-									<li><a href="blog-single-no-sidebar.html">Single No Sidebar</a></li>
-								</ul>
-							</li>
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">Contact</a> 
-								<ul class="sub-menu">
-									<li><a href="contact.html">Contact</a></li>
-									<li><a href="contact-simple.html">Contact Simple</a></li>
-								</ul>
-							</li>
-							<li class="has-children">
-								<a href="#" class="sub-menu-trigger">Pages</a> 
-								<ul class="sub-menu">
-									<li><a href="page-dummy.html">Page 1</a></li>
-									<li><a href="page-dummy-2.html">Page 2</a></li>
-									<li><a href="page-dummy-classic.html">Page Classic</a></li>
-								</ul>
-							</li>
-							<li><a href="index.html">All Demos</a></li>
+							-->
+
+							<li><a href="home.html" class="sm-scroll">Home</a></li>
+							<li><a href="about-me.html" class="sm-scroll">About me</a></li>
+							<li><a href="list.html" class="sm-scroll">Works</a></li>
+							<li><a href="contact.html" class="sm-scroll">Contact</a></li>
 						</ul> <!-- /.menu-list -->
 					</div>
 					<!-- End menu -->
@@ -190,18 +133,17 @@
 					<!-- Begin follow me buttons -->
 					<div class="follow-me-buttons">
 						<ul>
-							<li><a href="javascript:;" title="Follow me on Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li> 
-							<li><a href="javascript:;" title="Follow me on Dribbble" target="_blank"><i class="fab fa-dribbble"></i></a></li> 
-							<li><a href="" title="Follow me on Behance" target="_blank"><i class="fab fa-behance"></i></a></li> 
-							<li><a href="mailto:info@your-email.com" title="Email Me" target="_blank"><i class="far fa-envelope"></i></a></li>
+							<li><a href="https://www.facebook.com/ShiaoC/" title="Follow me on Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li> 
+							<li><a href="gallery/contact.html" title="Follow me on Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li> 
+							<li><a href="saki.shiaochang@gmail.com" title="Email Me" target="_blank"><i class="far fa-envelope"></i></a></li>
 						</ul>
 					</div>
 					<!-- End follow me buttons -->
 
 					<!-- Begin copyright -->
 					<div class="copyright">
-						Copyright © 2016 <br>
-						<a target="_blank" href="javascript:;">Themetorium</a>
+						Copyright © 2024 <br>
+						<a target="_blank" href="javascript:;">ShiaoC</a>
 					</div>
 					<!-- End copyright -->
 
@@ -279,16 +221,15 @@
 										<div class="iso-text-box-wrap">
 											<div class="iso-text-box-inner">
 												<div class="iso-text-box">
-													<h3 class="gs-item-title font-alter-1">2024安順新年營會</h3>
-													<span class="gs-item-category">Documentary</span>
+													<h3 class="gs-item-title font-alter-1">相簿名稱</h3>
+													<span class="gs-item-category">Nature</span>
 
 													<!-- Begin text box description
 													================================
 													* Do not use long text. Short text only!!!
 													-->
 													<p class="gs-item-description">
-														<a target="_blank" href="javascript:;">2024.01.01</a><br>
-                                                        莫名就開始爬山惹....好累啊啊啊啊啊
+														<a target="_blank" href="javascript:;">Mauris luctus libero</a> - This is a short description of the album. Dolor sit amet nate, consectetur adipiscing elit. Vivamus et magna accumsan turpis egestas malesuada. Donec imperdiet ut quam sed faucibus. Sed at placerat odio. Duis leo dui, porta in rutrum sit amet consequat.
 													</p>
 													<!-- End text box description -->
 
@@ -381,89 +322,7 @@
 								
 
 
-                                <div class="isotope-item iso-height-1">
-                                    <a href="gallery/240101/蕭張攝影-4313.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/240101/蕭張攝影-4313.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-            
-                                <div class="isotope-item iso-height-2">
-                                    <a href="gallery/240101/蕭張攝影-4311.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/240101/蕭張攝影-4311.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-1">
-                                    <a href="gallery/240101/蕭張攝影-4333.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/240101/蕭張攝影-4333.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-            
-                                <div class="isotope-item iso-height-2">
-                                    <a href="gallery/240101/蕭張攝影-4073.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/240101/蕭張攝影-4073.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-1">
-                                    <a href="gallery/240101/蕭張攝影-4315.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/240101/蕭張攝影-4315.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-1">
-                                    <a href="gallery/240101/蕭張攝影-4321.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/240101/蕭張攝影-4321.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-1">
-                                    <a href="gallery/240101/蕭張攝影-4330.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/240101/蕭張攝影-4330.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="isotope-item iso-height-1">
-                                    <a href="gallery/240101/蕭張攝影-4325.jpg" class="gallery-single-item lg-trigger">
-                                        <div class="gs-item-image bg-image" style="background-image: url(gallery/240101/蕭張攝影-4325.jpg); background-position: 50% 50%"></div>
-                                        <div class="gs-item-cover">
-                                            <div class="gs-item-info">
-                                                <span class="s-icon"><i class="fas fa-search"></i></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                                                                                                                                                            
+
 
 
 
@@ -514,11 +373,11 @@
 		
 		<!-- Theme master JS -->
 		<script src="static/js/theme.js"></script>
-        <script>
-            function goBack() {
-                window.history.back();
-            }
-        </script>
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
 	</body>
 
 </html>
