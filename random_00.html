@@ -50,6 +50,14 @@
   </style>
 </head>
 <body>
+  <audio id="buttonSound">
+    <source src="click1.ogg" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="readySound">
+    <source src="ready.ogg" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
   <div class="calculator">
     <div class="display" id="displayButton">0</div>
     <div class="buttons" id="buttonsContainer">
@@ -60,21 +68,36 @@
     document.addEventListener("DOMContentLoaded", function() {
       const displayButton = document.getElementById('displayButton');
       const buttonsContainer = document.getElementById('buttonsContainer');
-
+      const buttonSound = document.getElementById('buttonSound');
+      const readySound = document.getElementById('readySound'); // 新增的音效元素
+  
       let currentNumber = '0';
-
+  
       // 更新顯示
       function updateDisplay() {
         displayButton.textContent = currentNumber;
       }
-
+  
+      // 播放按鈕聲音
+      function playButtonSound() {
+        buttonSound.currentTime = 0; // 重置音頻播放時間
+        buttonSound.play();
+      }
+  
+      // 播放ready音效
+      function playReadySound() {
+        readySound.currentTime = 0;
+        readySound.play();
+      }
+  
       // AC按鈕點擊事件
       function acButtonClick() {
         currentNumber = '0';
         shuffleButtons();
         updateDisplay();
+        playButtonSound();
       }
-
+  
       // 數字按鈕點擊事件
       function numberButtonClick(event) {
         const digit = event.target.textContent;
@@ -84,16 +107,18 @@
           currentNumber += digit;
         }
         updateDisplay();
+        playButtonSound();
       }
-
+  
       // 00按鈕點擊事件
       function doubleZeroButtonClick() {
         if (currentNumber !== '0') {
           currentNumber += '00';
         }
         updateDisplay();
+        playButtonSound();
       }
-
+  
       // 刪除按鈕點擊事件
       function deleteButtonClick() {
         if (currentNumber.length > 1) {
@@ -102,11 +127,12 @@
           currentNumber = '0';
         }
         updateDisplay();
+        playButtonSound();
       }
-
+  
       // 上方暫存位置按鈕點擊事件
       displayButton.addEventListener('click', acButtonClick);
-
+  
       // 隨機排序按鈕
       function shuffleButtons() {
         const numbers = Array.from({ length: 12 }, (_, i) => {
@@ -139,11 +165,13 @@
           }
           buttonsContainer.appendChild(button);
         });
+        playReadySound(); // 調用播放ready音效
       }
-
+  
       // 初始隨機排序按鈕
       shuffleButtons();
     });
   </script>
+  
 </body>
 </html>
