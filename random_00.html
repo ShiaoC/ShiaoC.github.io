@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Calculator</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .calculator {
+      width: 100%;
+      height: 100vh; /* 設置高度為視口高度 */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .display {
+      width: 100%;
+      height: 20%; /* 設置顯示區域高度為20%的視口高度 */
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 10px;
+      font-size: 20vw; /* 使用vw單位設置字體大小 */
+      cursor: pointer;
+      grid-column: span 3; /* 跨越3列 */
+    }
+
+    .buttons {
+      width: 100%;
+      height: 80%; /* 設置按鈕區域高度為80%的視口高度 */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3列 */
+      grid-template-rows: repeat(4, 1fr); /* 4行 */
+      grid-gap: 5px;
+      padding: 10px;
+    }
+
+    button {
+      width: 100%;
+      height: 100%;
+      font-size: 14vw; /* 使用vw單位設置字體大小 */
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="displayButton">0</div>
+    <div class="buttons" id="buttonsContainer">
+      <!-- Buttons will be generated here -->
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const displayButton = document.getElementById('displayButton');
+      const buttonsContainer = document.getElementById('buttonsContainer');
+
+      let currentNumber = '0';
+
+      // 更新顯示
+      function updateDisplay() {
+        displayButton.textContent = currentNumber;
+      }
+
+      // AC按鈕點擊事件
+      function acButtonClick() {
+        currentNumber = '0';
+        shuffleButtons();
+        updateDisplay();
+      }
+
+      // 數字按鈕點擊事件
+      function numberButtonClick(event) {
+        const digit = event.target.textContent;
+        if (currentNumber === '0') {
+          currentNumber = digit;
+        } else {
+          currentNumber += digit;
+        }
+        updateDisplay();
+      }
+
+      // 00按鈕點擊事件
+      function doubleZeroButtonClick() {
+        if (currentNumber !== '0') {
+          currentNumber += '00';
+        }
+        updateDisplay();
+      }
+
+      // 刪除按鈕點擊事件
+      function deleteButtonClick() {
+        if (currentNumber.length > 1) {
+          currentNumber = currentNumber.slice(0, -1);
+        } else {
+          currentNumber = '0';
+        }
+        updateDisplay();
+      }
+
+      // 上方暫存位置按鈕點擊事件
+      displayButton.addEventListener('click', acButtonClick);
+
+      // 隨機排序按鈕
+      function shuffleButtons() {
+        const numbers = Array.from({ length: 12 }, (_, i) => {
+          switch (i) {
+            case 10:
+              return '00';
+            case 11:
+              return '→';
+            default:
+              return i.toString();
+          }
+        });
+        for (let i = numbers.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
+        }
+        buttonsContainer.innerHTML = ''; // 清空按鈕容器
+        numbers.forEach(number => {
+          const button = document.createElement('button');
+          button.textContent = number;
+          switch (number) {
+            case '00':
+              button.addEventListener('click', doubleZeroButtonClick);
+              break;
+            case '→':
+              button.addEventListener('click', deleteButtonClick);
+              break;
+            default:
+              button.addEventListener('click', numberButtonClick);
+          }
+          buttonsContainer.appendChild(button);
+        });
+      }
+
+      // 初始隨機排序按鈕
+      shuffleButtons();
+    });
+  </script>
+</body>
+</html>
