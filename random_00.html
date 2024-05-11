@@ -8,6 +8,7 @@
     html, body {
       height: 100%;
       margin: 0;
+      overflow: hidden; /* 禁止滑動 */
       touch-action: manipulation; /* 在整個文檔中禁止雙擊縮放 */
     }
 
@@ -22,20 +23,20 @@
 
     .display {
       width: 100%;
-      height: 20%; /* 設置顯示區域高度為20%的視口高度 */
+      height: 16%; /* 設置顯示區域高度為20%的視口高度 */
       background-color: #f3f3f3;
       display: flex;
       justify-content: flex-end;
       align-items: center;
       padding: 0 10px;
-      font-size: 20vw; /* 使用vw單位設置字體大小 */
+      font-size: 16vw; /* 使用vw單位設置字體大小 */
       cursor: pointer;
       grid-column: span 3; /* 跨越3列 */
     }
 
     .buttons {
       width: 100%;
-      height: 80%; /* 設置按鈕區域高度為80%的視口高度 */
+      height: 64%; /* 設置按鈕區域高度為80%的視口高度 */
       display: grid;
       grid-template-columns: repeat(3, 1fr); /* 3列 */
       grid-template-rows: repeat(4, 1fr); /* 4行 */
@@ -46,7 +47,7 @@
     button {
       width: 100%;
       height: 100%;
-      font-size: 9vw; /* 使用vw單位設置字體大小 */
+      font-size: 8vw; /* 使用vw單位設置字體大小 */
     }
   </style>
 </head>
